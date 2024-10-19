@@ -7,19 +7,19 @@ Skater boy es un sencillo juego de plataformas en 2D, inspirado en el famoso jue
 
 ## Características
 
--Control sencillo: Un solo botón para saltar.
--Gráficos minimalistas: Estilo retro en pixel art.
--Aumento progresivo de dificultad: El skater se encuentra con mas obstaculos a medida que avanza el juego.
--Obstáculos variados: bancos, fuentes y arboles.
--Marcador de puntuación: La puntuación aumenta cuanto más tiempo sobrevivas.
--Modo de juego infinito: Patina todo lo que puedas sin chocar con un obstáculo.
+- Control sencillo: Un solo botón para saltar.
+- Gráficos minimalistas: Estilo retro en pixel art.
+- Aumento progresivo de dificultad: El skater se encuentra con mas obstaculos a medida que avanza el juego.
+- Obstáculos variados: bancos, fuentes y arboles.
+- Marcador de puntuación: La puntuación aumenta cuanto más tiempo sobrevivas.
+- Modo de juego infinito: Patina todo lo que puedas sin chocar con un obstáculo.
 
 
 ## Controles
 
--Espacio: Saltar
--Flecha hacia arriba: Salto alternativo (opcional)
--Flecha hacia abajo: Agacharse (si se implementa en versiones futuras)
+- Espacio: Saltar
+- Flecha hacia arriba: Salto alternativo (opcional)
+- Flecha hacia abajo: Agacharse (si se implementa en versiones futuras)
 
 
 ## Reglas del juego
@@ -35,7 +35,7 @@ Skater boy es un sencillo juego de plataformas en 2D, inspirado en el famoso jue
 
 Este juego está desarrollado utilizando las siguientes tecnologías:
 
-HTML para la estructura web del juego.
-JavaScript para la lógica del juego.
-CSS para los estilos visuales.
-Node.js (opcional) para el servidor de desarrollo local.
+- HTML para la estructura web del juego.
+- JavaScript para la lógica del juego.
+- CSS para los estilos visuales.
+- Node.js (opcional) para el servidor de desarrollo local.
