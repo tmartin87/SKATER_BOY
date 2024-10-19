@@ -2,14 +2,14 @@
 
 ## Descripción
 
-Skater boy es un sencillo juego de plataformas en 2D, inspirado en el famoso juego del dinosaurio de Google Chrome que aparece cuando no hay conexión a Internet. En este juego, el jugador controla a un chico skater que patina sin parar por el parque, y debe saltar sobre obstáculos para evitar colisionar con ellos. A medida que el tiempo avanza, los obstaculos aparecen mas juntos y con mas frequencia, haciendo que sea más desafiante.
+Skater boy es un sencillo juego de plataformas en 2D, inspirado en el famoso juego del dinosaurio de Google Chrome que aparece cuando no hay conexión a Internet. En este juego, el jugador controla a un chico skater que patina sin parar por el parque, y debe saltar sobre obstáculos para evitar colisionar con ellos. A medida que el tiempo avanza, la velocidad del juego aumenta, haciendo que sea más desafiante.
 
 
 ## Características
 
 - Control sencillo: Un solo botón para saltar.
 - Gráficos minimalistas: Estilo retro en pixel art.
-- Aumento progresivo de dificultad: El skater se encuentra con mas obstaculos a medida que avanza el juego.
+- Aumento progresivo de dificultad: El skater patina cada vez mas rápido.
 - Obstáculos variados: bancos, fuentes y arboles.
 - Marcador de puntuación: La puntuación aumenta cuanto más tiempo sobrevivas.
 - Modo de juego infinito: Patina todo lo que puedas sin chocar con un obstáculo.
@@ -28,7 +28,7 @@ Skater boy es un sencillo juego de plataformas en 2D, inspirado en el famoso jue
 2. El jugador debe saltar sobre los obstáculos para evitar chocar.
 3. El juego termina cuando el skater colisiona con un obstáculo.
 4. La puntuación se calcula en función del tiempo que el jugador ha logrado evitar los obstáculos.
-5. El juego se vuelve más difícil a medida que el skater  se encuentra con mas obstaculos.
+5. El juego se vuelve más difícil a medida que el skater patina mas rapido.
 
 
 ## Dependencias
