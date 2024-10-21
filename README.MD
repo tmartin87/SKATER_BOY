@@ -39,3 +39,28 @@ Este juego está desarrollado utilizando las siguientes tecnologías:
 - JavaScript para la lógica del juego.
 - CSS para los estilos visuales.
 - Node.js (opcional) para el servidor de desarrollo local.
+
+
+
+
+# ORGANIZACIÓN DE OPP (CLASES)
+
+Dividir el juego en varias clases de JavaScript ayuda a mantener el código organizado, modulable y más fácil de mantener. Aquí explico la estructura del juego usando clases:
+
+
+## Clase Game
+
+Esta será la clase principal que gestionará la información bascica del juego, la puntuación del jugador, el area del juego y el tiempo.
+
+
+## Clase Player
+
+Esta clase es para toda la información que necesitamos del jugador, posicion, velocidad, direccion, y dimensiones. En esta clase tendremos el metodo move() donde indicaremos como se movera el jugador.
+
+## Clase Enemy
+
+Esta clase sera donde pondremos la informacion de los obstaculos que se ira encontrando el Skater, posicion, movimineto y direccion.
+
+## Clase Logic
+
+En esta clase tendremos toda la informacion relacionada con la logica del juego, como actuan los controles, y como interactuan el Player con los Enemies.
