@@ -37,12 +37,12 @@ body {
   position: absolute;
   bottom: 80px;
   left: 100px;
-  transition: 0.5s ease;
+  transition: transform 0.6s ease-in-out;
 }
 
 .saltando {
-  animation: saltar 0.5s ease-in-out
-  
+  animation: saltar 0.6s ease-in-out
+
 }
 
 @keyframes saltar {

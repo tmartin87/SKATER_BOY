@@ -3,17 +3,21 @@ class Player {
       this.element = document.createElement("div");
       this.element.setAttribute("id", "player");
       myGame.element.appendChild(this.element);
-      
-
-      this.positionBottom = 0;
-      this.positionLeft = 0;
-      this.distance = 0;
-      
-
+  
+      this.isJumping = false; 
     }
   
-    
-    
+    jump() {
+      if (!this.isJumping) {
+        this.isJumping = true;
+        this.element.classList.add('saltando'); 
+  
+        setTimeout(() => {
+          this.element.classList.remove('saltando');
+          this.isJumping = false; // 
+        }, 600);
+      }
+    }
   }
   
   const player = new Player();
