@@ -12,31 +12,48 @@ body {
 }
 
 #game-area {
-  width: 800px;
-  height: 300px;
+  width: 1400px;
+  height: 400px;
   background-color: black;
   position: relative;
 }
 
-#enemy-area {
-  border: 1px solid red;
-  width: 800px;
-  height: 100px;
-  position: relative;
-  margin-top: 25%;
-}
+
 
 .enemy {
   background-color: greenyellow;
   width: 40px;
   height: 40px;
+  position: absolute;
+  bottom: 80px;
+  left: 1200px;
+ 
 }
 
 #player {
   background-color: rgb(133, 0, 0);
-  width: 50px;
-  height: 70px;
+  width: 70px;
+  height: 90px;
   position: absolute;
-  bottom: 0;
-  left: 10;
+  bottom: 80px;
+  left: 100px;
+  transition: 0.5s ease;
+}
+
+.saltando {
+  animation: saltar 0.5s ease-in-out
+  
+}
+
+@keyframes saltar {
+  0% {
+    bottom: 80px;
+  }
+  50%{
+    bottom: 200px
+  }
+  100%{
+
+    bottom: 80px;
+  }
 }
