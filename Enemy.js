@@ -3,8 +3,8 @@ class Enemy {
         this.element = document.createElement("div");
         this.element.classList.add("enemy");
         myGame.element.appendChild(this.element);
-        this.positionLeft =   1400; 
-        this.speed = 7; 
+        this.positionLeft = 1400; 
+        this.speed = 5; 
         this.isActive = true; 
         this.move(); 
     }
@@ -36,10 +36,14 @@ class Enemy {
     stop() {
         this.isActive = false; 
         
+        
     }
 }
 
 const enemies = [];
-        for (let i = 0; i < 1; i++) {
+        for (let i = 0; i < 6; i++) {
             enemies.push(new Enemy());
         }
+
+
+          

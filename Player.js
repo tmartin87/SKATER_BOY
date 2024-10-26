@@ -38,10 +38,10 @@ class Player {
 
     stop() {
         this.isActive = false; 
-       /*  const currentBottom =  myGame.element.getBoundingClientRect().bottom /* + this.element.getBoundingClientRect().bottom  
-        this.element.style.bottom = currentBottom + "px" */
+       const currentBottom =  myGame.element.getBoundingClientRect().bottom - this.element.getBoundingClientRect().bottom  
+        this.element.style.bottom = currentBottom + "px" 
 
-        // console.log(this.element.getBoundingClientRect().bottom);
+        console.log(this.element.getBoundingClientRect().bottom);
         
     }
     
