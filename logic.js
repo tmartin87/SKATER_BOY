@@ -24,6 +24,7 @@ document.addEventListener('keydown', (event) => {
                     
                    player.element.style.animationPlayState = "paused"
                    player.stop()
+            
                 
                 }
             });
