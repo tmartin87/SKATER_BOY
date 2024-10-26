@@ -37,11 +37,11 @@ body {
   position: absolute;
   bottom: 80px;
   left: 100px;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .saltando {
-  animation: saltar 0.6s ease-in-out
+  animation: saltar 0.7s ease-in-out
 
 }
 
@@ -49,7 +49,7 @@ body {
   0% {
     bottom: 80px;
   }
-  50%{
+  60%{
     bottom: 200px
   }
   100%{
