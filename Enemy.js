@@ -4,7 +4,7 @@ class Enemy {
         this.element.classList.add("enemy");
         myGame.element.appendChild(this.element);
         this.positionLeft =   1400; 
-        this.speed = 35; 
+        this.speed = 7; 
         this.isActive = true; 
         this.move(); 
     }
@@ -14,17 +14,23 @@ class Enemy {
     }
 
     move() {
-        const moveInterval = setInterval(() => {
+        const animate = () => {
             if (this.positionLeft <= 0) { 
                 this.positionLeft = 1400; 
             }
+            
             this.positionLeft -= this.speed; 
             this.element.style.left = this.positionLeft + "px"; 
-            
-            if (!this.isActive) {
-                clearInterval(moveInterval); 
+    
+            if (this.isActive) {
+                requestAnimationFrame(animate); 
             }
-        }, 50); 
+        };
+         
+        
+        if (this.isActive) {
+            requestAnimationFrame(animate);
+        }
     }
 
     stop() {
@@ -33,6 +39,6 @@ class Enemy {
 }
 
 const enemies = [];
-        for (let i = 0; i < 1; i++) {
+        for (let i = 0; i < 5; i++) {
             enemies.push(new Enemy());
         }
