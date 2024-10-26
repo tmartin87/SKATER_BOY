@@ -9,6 +9,9 @@ class Player {
       this.element.style.bottom = this.positionBottom + 'px'; 
   
       this.isJumping = false;
+
+    
+      this.isActive = true; 
       
 
     }
@@ -22,7 +25,7 @@ class Player {
   
         setTimeout(() => {
           this.element.classList.remove('saltando');
-          this.isJumping = false; // 
+          this.isJumping = false; 
         }, 700);
       }
     }
@@ -31,6 +34,15 @@ class Player {
         return this.element.getBoundingClientRect();
 
 
+    }
+
+    stop() {
+        this.isActive = false; 
+       /*  const currentBottom =  myGame.element.getBoundingClientRect().bottom /* + this.element.getBoundingClientRect().bottom  
+        this.element.style.bottom = currentBottom + "px" */
+
+        // console.log(this.element.getBoundingClientRect().bottom);
+        
     }
     
   }

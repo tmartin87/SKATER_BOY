@@ -20,7 +20,11 @@ document.addEventListener('keydown', (event) => {
                     playerBounds.bottom > enemyBounds.top
                 ) {
                     console.log("¡Colisión detectada!");
-                    enemy.stop(); 
+                    enemy.stop();
+                    
+                   player.element.style.animationPlayState = "paused"
+                   player.stop()
+                
                 }
             });
         }
