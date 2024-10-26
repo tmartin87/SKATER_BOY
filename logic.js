@@ -27,5 +27,3 @@ document.addEventListener('keydown', (event) => {
 
         
         setInterval(checkCollision, 1); 
-
-        
