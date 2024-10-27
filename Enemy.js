@@ -6,7 +6,7 @@ class Enemy {
     this.element.classList.add(Enemy.classes[Math.floor(Math.random()*3)]);
     myGame.element.appendChild(this.element);
     this.positionLeft = 1400;
-    this.speed = 5;
+    this.speed = 4 ;
     this.isActive = true;
     this.move();
   }
@@ -45,4 +45,4 @@ const enemies = [];
 
 const enemyInterval = setInterval(() => {
   enemies.push(new Enemy());
-}, 2000);
+}, 6000);

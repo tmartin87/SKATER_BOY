@@ -2,8 +2,9 @@ class Player {
     constructor() {
       this.element = document.createElement("div");
       this.element.setAttribute("id", "player");
+      
       myGame.element.appendChild(this.element);
-      this.positionBottom = 80; 
+      this.positionBottom = 70; 
       this.positionLeft = 100; 
       this.element.style.left = this.positionLeft + 'px';
       this.element.style.bottom = this.positionBottom + 'px'; 
