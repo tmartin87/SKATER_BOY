@@ -24,6 +24,7 @@ document.addEventListener('keydown', (event) => {
                     
                    player.element.style.animationPlayState = "paused"
                    player.stop()
+                   myGame.stop();
             
                 
                 }
@@ -31,4 +32,8 @@ document.addEventListener('keydown', (event) => {
         }
 
         
-        setInterval(checkCollision, 1); 
+        setInterval(checkCollision, 100); 
+        
+    
+
+        

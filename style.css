@@ -19,67 +19,77 @@ body {
 }
 
 
+#background-video {
+  
+ 
+}
+
+
 
 .enemy1 {
-  background-image: url('./images/ANCIANA.png');
+  background-image: url('./images/ANCIANA.GIF');
   background-size: cover; 
   background-position: center; 
-  width: 55px;
-  height: 70px;
+  width: 75px;
+  height: 90px;
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
   left: 1200px;
  
 }
 
 .enemy2{
-  background-image: url('./images/POLICIA.png');
+  background-image: url('./images/POLICIA.gif');
   background-size: cover; 
   background-position: center; 
-  width: 50px;
-  height: 90px;
+  width: 55px;
+  height: 105px;
   position: absolute;
-  bottom: 80px;
+  bottom: 73px;
   left: 1200px;
 
 }
 
 .enemy3{
-  background-image: url('./images/PERRO.png');
+  background-image: url('./images/PERRO.gif');
   background-size: cover; 
   background-position: center; 
-  width: 50px;
-  height: 69px;
+  width: 70px;
+  height: 65px;
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
   left: 1200px;
 
 }
 
 #player {
-  background-image: url('./images/SKATER.png');
+  background-image: url('./images/SKATER.gif');
   background-size: cover; 
   background-position: center; 
-  width: 71px;
-  height: 90px;
+  width: 81px;
+  height: 100px;
   position: absolute;
-  bottom: 70px;
+  bottom: 70x;
   left: 100px;
-  transition: transform 0.7s ease-in-out;
+  transition:  transform  0.9s ease-in  ; 
 }
-
+ 
 .saltando {
-  animation: saltar 0.7s ease-in-out forwards;
-  background-image: url('./images/SKATER_SALTANDO.png');
-  background-size: cover; 
+  background-image: image('./images/SKATER_SALTANDO.gif');
+
+  animation: saltar 0.9s ease-in-out ;
+  
+  
+ 
+  
 }
 
 @keyframes saltar {
   0% {
     bottom: 70px;
   }
-  50%{
-    bottom: 250px
+  55%{  
+    bottom: 270px
   }
   100%{
 

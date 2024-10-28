@@ -7,6 +7,7 @@ class Game {
         this.element = document.querySelector("#game-area");
         this.width = this.element.getBoundingClientRect().width;
         this.height = this.element.getBoundingClientRect().height;
+        
     }
 }
 
