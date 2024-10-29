@@ -6,7 +6,7 @@ class Enemy {
     this.element.classList.add(Enemy.classes[Math.floor(Math.random()*3)]);
     myGame.element.appendChild(this.element);
     this.positionLeft = 1400;
-    this.speed = 4;
+    this.speed = 5;
     this.isActive = true;
     this.move();
     
@@ -20,7 +20,7 @@ class Enemy {
     if (player.isActive) {
       const animate = () => {
         if (this.positionLeft <= 0) {
-          this.positionLeft = 1400;
+          this.element.remove();
         }
 
         this.positionLeft -= this.speed;

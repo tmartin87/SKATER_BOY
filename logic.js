@@ -1,6 +1,7 @@
 document.addEventListener('keydown', (event) => {
-    if (event.key === " " || event.key === "ArrowUp" ) { 
-      player.jump();
+    if (event.key === " " || event.key === "ArrowUp" ) {    
+      
+        player.jump();
     }
   });
 
@@ -24,15 +25,31 @@ document.addEventListener('keydown', (event) => {
                     
                    player.element.style.animationPlayState = "paused"
                    player.stop()
-                   myGame.stop();
-            
+                   
                 
                 }
             });
         }
 
         
-        setInterval(checkCollision, 100); 
+        setInterval(checkCollision, 1);
+
+       /*  function gameOver (){
+
+            clearInterval(enemyInterval);
+
+
+
+        }
+
+        gameOver() */
+           
+            
+
+
+
+        
+        
         
     
 

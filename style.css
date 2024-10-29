@@ -38,6 +38,18 @@ body {
  
 }
 
+.enemy1_static {
+  background-image: url('./images/ANCIANA.png');
+  background-size: cover; 
+  background-position: center; 
+  width: 75px;
+  height: 90px;
+  position: absolute;
+  bottom: 70px;
+  left: 1200px;
+ 
+}
+
 .enemy2{
   background-image: url('./images/POLICIA.gif');
   background-size: cover; 
@@ -50,8 +62,33 @@ body {
 
 }
 
+.enemy2_static {
+  background-image: url('./images/POLICIA.png');
+  background-size: cover; 
+  background-position: center; 
+  width: 55px;
+  height: 105px;
+  position: absolute;
+  bottom: 73px;
+  left: 1200px;
+
+}
+
+
 .enemy3{
   background-image: url('./images/PERRO.gif');
+  background-size: cover; 
+  background-position: center; 
+  width: 70px;
+  height: 65px;
+  position: absolute;
+  bottom: 70px;
+  left: 1200px;
+
+}
+
+.enemy3_static{
+  background-image: url('./images/PERRO.png');
   background-size: cover; 
   background-position: center; 
   width: 70px;
@@ -74,8 +111,8 @@ body {
   transition:  transform  0.9s ease-in  ; 
 }
  
-.saltando {
-  background-image: image('./images/SKATER_SALTANDO.gif');
+#player.saltando {
+  background-image: url('./images/SKATER_SALTANDO.png');
 
   animation: saltar 0.9s ease-in-out ;
   
