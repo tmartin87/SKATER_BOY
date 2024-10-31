@@ -6,7 +6,7 @@ class Enemy {
     this.element.classList.add(Enemy.classes[Math.floor(Math.random()*3)]);
     myGame.element.appendChild(this.element);
     this.positionLeft = 1400;
-    this.speed = 5;
+    this.speed = 7;
     this.isActive = true;
     this.move();
     
@@ -17,7 +17,7 @@ class Enemy {
   }
 
   move() {
-    if (player.isActive) {
+    if (this.isActive) {
       const animate = () => {
         if (this.positionLeft <= 0) {
           this.element.remove();
@@ -39,7 +39,11 @@ class Enemy {
 
   stop() {
     this.isActive = false;
+    console.log("STOP!");
+    
     this.speed = 0;
+    this.element.classList.add("static")
+    clearInterval(enemyInterval)
   }
 }
 
@@ -47,4 +51,7 @@ const enemies = [];
 
 const enemyInterval = setInterval(() => {
   enemies.push(new Enemy());
-}, 4000);
+  if(!myGame.isActive){
+    clearInterval(enemyInterval)
+  }
+}, 2000);

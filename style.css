@@ -18,6 +18,14 @@ body {
   position: relative;
 }
 
+#game-area.static {
+  background-image: url('./images/STATIC_BACKGROUND.png');
+  width: 1400px;
+  height: 400px;
+  position: relative;
+  
+}
+
 
 #background-video {
   
@@ -38,7 +46,7 @@ body {
  
 }
 
-.enemy1_static {
+.enemy1.static {
   background-image: url('./images/ANCIANA.png');
   background-size: cover; 
   background-position: center; 
@@ -62,7 +70,7 @@ body {
 
 }
 
-.enemy2_static {
+.enemy2.static {
   background-image: url('./images/POLICIA.png');
   background-size: cover; 
   background-position: center; 
@@ -87,7 +95,7 @@ body {
 
 }
 
-.enemy3_static{
+.enemy3.static{
   background-image: url('./images/PERRO.png');
   background-size: cover; 
   background-position: center; 
@@ -109,6 +117,10 @@ body {
   bottom: 70x;
   left: 100px;
   transition:  transform  0.9s ease-in  ; 
+}
+
+#player.saltando.static{
+  background-image: url('./images/SKATER.png');
 }
  
 #player.saltando {

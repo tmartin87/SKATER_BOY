@@ -23,14 +23,15 @@ class Player {
     if (!this.isJumping) {
       this.isJumping = true;
       this.element.classList.add('saltando'); 
-
       setTimeout(() => {
+        if(this.isActive){
         this.element.classList.remove('saltando');
-        this.isJumping = false; 
+        this.isJumping = false;
+        } 
       }, 900);
     }
   }
-
+  
   getBounds() {
       return this.element.getBoundingClientRect();
 
@@ -39,9 +40,10 @@ class Player {
 
   stop() {
       this.isActive = false; 
+      this.element.style.animationPlayState = "paused";
      const currentBottom =  myGame.element.getBoundingClientRect().bottom - this.element.getBoundingClientRect().bottom  
       this.element.style.bottom = currentBottom + "px" 
-
+      this.element.classList.add("static")
       console.log(this.element.getBoundingClientRect().bottom);
       
   }
