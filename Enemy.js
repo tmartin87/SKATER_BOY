@@ -5,8 +5,8 @@ class Enemy {
     this.element = document.createElement("div");
     this.element.classList.add(Enemy.classes[Math.floor(Math.random()*3)]);
     myGame.element.appendChild(this.element);
-    this.positionLeft = 1400;
-    this.speed = 7;
+    this.positionLeft = 1350;
+    this.speed = 4;
     this.isActive = true;
     this.move();
     
@@ -48,10 +48,30 @@ class Enemy {
 }
 
 const enemies = [];
+let enemySpawnInterval = 2000; 
+let enemyInterval;
 
-const enemyInterval = setInterval(() => {
-  enemies.push(new Enemy());
-  if(!myGame.isActive){
-    clearInterval(enemyInterval)
-  }
-}, 2000);
+
+function startEnemySpawn() {
+ 
+  clearInterval(enemyInterval);
+  enemyInterval = setInterval(() => {
+    if (myGame.isActive) {
+      enemies.push(new Enemy());
+    } else {
+      clearInterval(enemyInterval); 
+    }
+  }, enemySpawnInterval);
+}
+
+
+function increaseEnemySpawnRate() {
+  enemySpawnInterval = Math.max(500, enemySpawnInterval * 0.8); 
+  startEnemySpawn(); 
+}
+
+
+startEnemySpawn();
+
+ 
+setInterval(increaseEnemySpawnRate, 15000);

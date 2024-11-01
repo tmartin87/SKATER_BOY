@@ -6,7 +6,7 @@ class Player {
     myGame.element.appendChild(this.element);
     this.positionBottom = 70; 
     this.positionLeft = 100; 
-    this.element.style.left = this.positionLeft + 'px';
+    
     this.element.style.bottom = this.positionBottom + 'px'; 
 
     this.isJumping = false;
@@ -39,11 +39,14 @@ class Player {
   }
 
   stop() {
-      this.isActive = false; 
+      this.isActive = false ;
+      
+      
+      this.element.classList.add("static")
       this.element.style.animationPlayState = "paused";
      const currentBottom =  myGame.element.getBoundingClientRect().bottom - this.element.getBoundingClientRect().bottom  
-      this.element.style.bottom = currentBottom + "px" 
-      this.element.classList.add("static")
+      this.element.style.bottom = currentBottom + "px"
+     
       console.log(this.element.getBoundingClientRect().bottom);
       
   }

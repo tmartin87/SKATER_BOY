@@ -1,8 +1,14 @@
+
+
 document.addEventListener("keydown", (event) => {
   if (event.key === " " || event.key === "ArrowUp") {
     player.jump();
+    jumpSound.currentTime = 0;
+    jumpSound.play();
   }
 });
+
+
 
 function checkCollision() {
   const playerBounds = player.getBounds();
@@ -16,7 +22,7 @@ function checkCollision() {
       playerBounds.top < enemyBounds.bottom &&
       playerBounds.bottom > enemyBounds.top
     ) {
-      console.log("¡Colisión detectada!");
+      
       enemy.stop();
 
      
@@ -29,12 +35,30 @@ function checkCollision() {
         enemy.stop();
       });
       myGame.stop();
+       backgroundMusic.pause();
+      backgroundMusic.currentTime = 0;
+
+      clearInterval(scoreInterval);
+      document.getElementById("restart-button").style.display = "block";
     }
+    
   });
 }
 
-    
-
 setInterval(checkCollision, 1);
+
+const scoreCounter = document.getElementById('score-counter');
+let score = 0;
+let scoreInterval;
+
+// Función para incrementar el puntaje
+const incrementScore = () => {
+  score += 100; // Suma 100 puntos
+  scoreCounter.textContent = `Score: ${score}`;
+};
+
+// Inicia el contador de puntos
+scoreInterval = setInterval(incrementScore, 1000);
+
 
  

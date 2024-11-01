@@ -18,7 +18,14 @@ class Game {
 
     }
 }
+ const jumpSound = document.getElementById("jump-sound");
+const backgroundMusic = document.getElementById("background-music");
 
 
+
+
+
+backgroundMusic.play();
+backgroundMusic.volume = 0.5;
 const myGame = new Game();
 

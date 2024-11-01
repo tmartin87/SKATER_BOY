@@ -7,13 +7,25 @@
     <title>Skater boy</title>
   </head>
   <body>
+    <audio id="jump-sound" src="./sound/SALTO.wav"></audio>
+    <audio id="background-music" src="./sound/BACKGROUND-MUSIC.mp3"autoplay loop></audio>
+
+    
+
     <section id="game-area">
+      <div id="score-counter">Score: 0</div>
       <video id="background-video" autoplay muted loop>
         <source src="./images/BACKGROUND.mp4"  type="video/mp4">
 
       </video>
       
       </section>
+    
+
+      <button id="restart-button" onclick="location.reload()">RESET</button>
+      
+
+      
     <script src="./Game.js"></script>
       
     <script src="./Player.js"></script>
