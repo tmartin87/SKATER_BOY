@@ -6,6 +6,12 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+document.addEventListener("touchstart", () => {
+  player.jump();
+  jumpSound.currentTime = 0;
+  jumpSound.play();
+});
+
 
 
 function checkCollision() {

@@ -9,10 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  
+g
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 #game-area {
@@ -188,4 +189,58 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+
+/* Móviles en horizontal */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  body {
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #game-area,
+  #game-area.static {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #player {
+    width: 60px;
+    height: 80px;
+    left: 60px;
+  }
+
+  .enemy1,
+  .enemy1.static {
+    width: 60px;
+    height: 75px;
+    left: 100vw;
+  }
+
+  .enemy2,
+  .enemy2.static {
+    width: 45px;
+    height: 90px;
+    left: 100vw;
+  }
+
+  .enemy3,
+  .enemy3.static {
+    width: 60px;
+    height: 60px;
+    left: 100vw;
+  }
+
+  #score-counter {
+    font-size: 18px;
+    padding: 8px;
+    top: 5px;
+    right: 5px;
+  }
+
+  #restart-button,
+  #start-button {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
 }
