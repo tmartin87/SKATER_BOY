@@ -179,7 +179,7 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  display: none; /* Oculto por defecto */
+  display: none; 
   z-index: 20;
 }
 
@@ -191,11 +191,41 @@ body {
   z-index: 10;
 }
 
-@media only screen and (min-width: 58px) and (orientation: landscape) {
-  #game-area {
-    width: 700px;
-    height: 400px;
-    background-color: black;
+@media only screen and (max-width: 968px) and (orientation: landscape) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    touch-action: manipulation;
+  }
+
+  #game-area
+ {
+    
     position: relative;
+    margin: 0 auto;
+    background-size: cover;
+    width: 100%;
+  }
+  #game-area.static{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    background-size:cover;
+    background-image: url('./images/STATIC_BACKGROUND_MOVIL.png');
+  
+  }
+
+ 
+  #player {
+    background-image: url('./images/SKATER.gif');
+    background-size: cover; 
+    background-position: center; 
+    width: 81px;
+    height: 100px;
+ /*    position: absolute; */
+    bottom: 70x;
+    left: 100px;
+    transition:  transform  0.9s ease-in  ; 
   }
 }
+  
