@@ -24,129 +24,111 @@ body {
 }
 
 #game-area.static {
-  background-image: url('./images/STATIC_BACKGROUND.png');
+  background-image: url("./images/STATIC_BACKGROUND.png");
   width: 1400px;
   height: 400px;
   position: relative;
-  
 }
-
 
 #background-video {
-  
- 
 }
 
-
-
 .enemy1 {
-  background-image: url('./images/ANCIANA.gif');
-  background-size: cover; 
-  background-position: center; 
+  background-image: url("./images/ANCIANA.gif");
+  background-size: cover;
+  background-position: center;
   width: 75px;
   height: 90px;
   position: absolute;
   bottom: 70px;
   left: 1200px;
- 
 }
 
 .enemy1.static {
-  background-image: url('./images/ANCIANA.png');
-  background-size: cover; 
-  background-position: center; 
+  background-image: url("./images/ANCIANA.png");
+  background-size: cover;
+  background-position: center;
   width: 75px;
   height: 90px;
   position: absolute;
   bottom: 70px;
   left: 1200px;
- 
 }
 
-.enemy2{
-  background-image: url('./images/POLICIA.gif');
-  background-size: cover; 
-  background-position: center; 
+.enemy2 {
+  background-image: url("./images/POLICIA.gif");
+  background-size: cover;
+  background-position: center;
   width: 55px;
   height: 105px;
   position: absolute;
   bottom: 73px;
   left: 1200px;
-
 }
 
 .enemy2.static {
-  background-image: url('./images/POLICIA.png');
-  background-size: cover; 
-  background-position: center; 
+  background-image: url("./images/POLICIA.png");
+  background-size: cover;
+  background-position: center;
   width: 55px;
   height: 105px;
   position: absolute;
   bottom: 73px;
   left: 1200px;
-
 }
 
-
-.enemy3{
-  background-image: url('./images/PERRO.gif');
-  background-size: cover; 
-  background-position: center; 
+.enemy3 {
+  background-image: url("./images/PERRO.gif");
+  background-size: cover;
+  background-position: center;
   width: 70px;
   height: 65px;
   position: absolute;
   bottom: 70px;
   left: 1200px;
-
 }
 
-.enemy3.static{
-  background-image: url('./images/PERRO.png');
-  background-size: cover; 
-  background-position: center; 
+.enemy3.static {
+  background-image: url("./images/PERRO.png");
+  background-size: cover;
+  background-position: center;
   width: 70px;
   height: 65px;
   position: absolute;
   bottom: 70px;
   left: 1200px;
-
 }
 
 #player {
-  background-image: url('./images/SKATER.gif');
-  background-size: cover; 
-  background-position: center; 
+  background-image: url("./images/SKATER.gif");
+  background-size: cover;
+  background-position: center;
   width: 81px;
   height: 100px;
   position: absolute;
   bottom: 70x;
   left: 100px;
-  transition:  transform  0.9s ease-in  ; 
+  transition: transform 0.9s ease-in;
 }
 
-#player.saltando.static{
-  background-image: url('./images/SKATER.png');
+#player.saltando.static {
+  background-image: url("./images/SKATER.png");
 }
- 
+
 #player.saltando {
-  background-image: url('./images/SKATER_SALTANDO.png');
+  background-image: url("./images/SKATER_SALTANDO.png");
 
-  animation: saltar 0.9s ease-in-out ;
-  
-  
- 
-  
+  animation: saltar 0.9s ease-in-out;
 }
 
 @keyframes saltar {
   0% {
     bottom: 70px;
   }
-  55%{  
-    bottom: 270px
+  55% {
+    bottom: 270px;
   }
-  100%{
-
+  100% {
     bottom: 70px;
   }
 }
@@ -159,7 +141,7 @@ body {
   font-weight: bold;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   padding: 10px;
   border-radius: 8px;
   z-index: 10;
@@ -173,13 +155,13 @@ body {
   padding: 15px 30px;
   font-size: 24px;
   background-color: #333;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  display: none; 
+  display: none;
   z-index: 20;
 }
 
@@ -198,34 +180,48 @@ body {
     touch-action: manipulation;
   }
 
-  #game-area
- {
-    
+  #game-area {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+   
+    background-color: black;
     position: relative;
-    margin: 0 auto;
-    background-size: cover;
-    width: 100%;
   }
-  #game-area.static{
+  
+  #game-area.static {
+    background-image: url("./images/STATIC_BACKGROUND_MOVIL.png");
     width: 100%;
-    position: absolute;
-    margin: 0 auto;
-    background-size:cover;
-    background-image: url('./images/STATIC_BACKGROUND_MOVIL.png');
+   
+    position: relative;
+  }
   
   }
 
- 
   #player {
-    background-image: url('./images/SKATER.gif');
-    background-size: cover; 
-    background-position: center; 
+    background-image: url("./images/SKATER.gif");
+    background-size: cover;
+    background-position: center;
     width: 81px;
     height: 100px;
- /*    position: absolute; */
+    position: absolute;
     bottom: 70x;
-    left: 100px;
-    transition:  transform  0.9s ease-in  ; 
+    left: 80px;
+    transition: transform 0.9s ease-in;
   }
 }
-  
+
+#score-counter {
+  position: absolute;
+  margin-top: 2%;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
