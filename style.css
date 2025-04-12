@@ -183,17 +183,14 @@ body {
   #game-area {
     width: 100%;
     height: auto;
-    margin: 0px;
-   
+    margin: 10px;
     background-color: black;
     position: relative;
   }
   
   #game-area.static {
     background-image: url("./images/STATIC_BACKGROUND_MOVIL.png");
-    width: 100%;
-   
-    position: relative;
+    
   }
   
   }
@@ -209,7 +206,7 @@ body {
     left: 80px;
     transition: transform 0.9s ease-in;
   }
-}
+
 
 #score-counter {
   position: absolute;
