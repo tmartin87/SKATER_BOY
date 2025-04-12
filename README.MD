@@ -55,11 +55,11 @@ Esta será la clase principal que gestionará la información bascica del juego,
 
 ## Clase Player
 
-Esta clase es para toda la información que necesitamos del jugador, posicion, velocidad, direccion, y dimensiones. En esta clase tendremos el metodo move() donde indicaremos como se movera el jugador.
+Esta clase es para toda la información que necesitamos del jugador, posicion, velocidad, direccion, y dimensiones. En esta clase tendremos diferentes metodos como jump() o stop() donde indicamos como salta el jugador y cuando se para.
 
 ## Clase Enemy
 
-Esta clase sera donde pondremos la informacion de los obstaculos que se ira encontrando el Skater, posicion, movimineto y direccion.
+Esta clase sera donde pondremos la informacion de los obstaculos que se ira encontrando el Skater, posicion, movimineto y direccion. En esta clase tendremos  metodos como move() o stop() donde indicamos como se mueve el enemigo y cuando se para.
 
 ## Clase Logic
 
