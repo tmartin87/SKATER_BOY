@@ -1,4 +1,3 @@
-corrigeme los acentos
 
 # SKATER BOY README
 
